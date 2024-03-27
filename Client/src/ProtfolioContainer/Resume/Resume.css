@@ -1,0 +1,61 @@
+.resume-bar {
+  width: 1px;
+  height: 200px;
+  background-color: orangered;
+  box-shadow: 1px 0 2px orangered;
+}
+
+.resume-content {
+  display: none;
+}
+.current-content {
+  display: block;
+}
+
+.resume-menu {
+  cursor: pointer;
+  width: 150px;
+  transition: width 1s;
+}
+
+.current-menu {
+  width: 250px;
+  background-color: black;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  border-radius: 0 15px 15px 0;
+
+  transition: width 1s;
+}
+
+.pointer {
+  width: 15px;
+  height: 15px;
+  background-color: orangered;
+  border-radius: 50%;
+}
+
+/* .scrollable-div {
+  overflow-y: auto;
+}
+.scrollable-div::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-div::-webkit-scrollbar-track {
+  background: #0a0a0a;
+  border-radius: 5px;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background: orangered;
+  border-radius: 5px;
+  height: 10px;
+  -webkit-transform: scale(1);
+}
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+  background: #d40505;
+} */
