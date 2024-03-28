@@ -3,7 +3,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div>
+    <div data-aos="fade-up">
       <div className="flex justify-between items-center">
         <div>
           <div>

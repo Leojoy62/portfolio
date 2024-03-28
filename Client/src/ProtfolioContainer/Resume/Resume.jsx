@@ -18,20 +18,21 @@ const Resume = () => {
     setToggleMenu(index);
   };
   return (
-    <div id="resume" className="px-[5%]">
-      <div
-        className="flex flex-col justify-center items-center my-10"
-        data-aos="zoom-in"
-      >
-        <h1 className="text-5xl font-bold">Resume</h1>
-        <p className="text-2xl my-5 text-gray-500">My Formal Bio Details</p>
-        <div className="relative flex">
+    <div id="resume" className="px-[5%] ">
+      <div className="flex flex-col justify-center items-center my-16">
+        <h1 className="text-5xl font-bold" data-aos="fade-right">
+          Resume
+        </h1>
+        <p className="text-2xl my-5 text-gray-500" data-aos="fade-left">
+          My Formal Bio Details
+        </p>
+        <div className="relative flex mb-10" data-aos="zoom-in">
           <hr className="text-black w-[250px]  border-gray-700 border-2" />
           <span className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-600 px-8 py-[6px] rounded-xl"></span>
         </div>
       </div>
-      <div className="flex gap-5  my-10 justify-between items-center ">
-        <div className=" w-1/5 ">
+      <div className="flex gap-5   justify-between items-center ">
+        <div className=" w-1/5 " data-aos="flip-left">
           <div className="flex items-center">
             <div
               style={{ fontSize: "28px" }}
@@ -99,50 +100,20 @@ const Resume = () => {
         </div>
         <div className="resume-bar"></div>
         <div className="w-3/5  flex flex-col justify-center  scrollable-div py-5 pr-2 ">
-          <div
-            className={
-              toogleMenu === 1
-                ? "resume-content current-content"
-                : "resume-content"
-            }
-          >
-            <Education />
+          <div className="resume-content current-content">
+            {toogleMenu === 1 && <Education />}
           </div>
-          <div
-            className={
-              toogleMenu === 2
-                ? "resume-content current-content"
-                : "resume-content"
-            }
-          >
-            <WorkHistory />
+          <div className="resume-content current-content">
+            {toogleMenu === 2 && <WorkHistory />}
           </div>
-          <div
-            className={
-              toogleMenu === 3
-                ? "resume-content current-content"
-                : "resume-content"
-            }
-          >
-            <Skills />
+          <div className="resume-content current-content">
+            {toogleMenu === 3 && <Skills />}
           </div>
-          <div
-            className={
-              toogleMenu === 4
-                ? "resume-content current-content"
-                : "resume-content"
-            }
-          >
-            <Projects />
+          <div className="resume-content current-content">
+            {toogleMenu === 4 && <Projects />}
           </div>
-          <div
-            className={
-              toogleMenu === 5
-                ? "resume-content current-content"
-                : "resume-content"
-            }
-          >
-            <Interest />
+          <div className="resume-content current-content">
+            {toogleMenu === 5 && <Interest />}
           </div>
         </div>
       </div>

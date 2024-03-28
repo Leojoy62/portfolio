@@ -2,7 +2,7 @@ import React from "react";
 
 const Interest = () => {
   return (
-    <div>
+    <div data-aos="fade-up">
       <div>
         <div className="flex items-center gap-3">
           <div className="pointer"></div>

@@ -6,10 +6,15 @@
 }
 
 .resume-content {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 .current-content {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .resume-menu {
@@ -24,9 +29,7 @@
   color: white;
   padding-top: 3px;
   padding-bottom: 3px;
-
   border-radius: 0 15px 15px 0;
-
   transition: width 1s;
 }
 

@@ -19,10 +19,18 @@ const Profile = () => {
       <div className="flex justify-between  pt-10 pb-24 px-[5%]">
         <div className="flex flex-col justify-center items-center">
           <div className="flex gap-8 text-4xl text-white justify-center items-center">
-            <RiFacebookBoxFill className="hover:text-orange-600" />
-            <FaSquareGithub className="hover:text-orange-600" />
-            <FaLinkedin className="hover:text-orange-600" />
-            <FaSquareXTwitter className="hover:text-orange-600" />
+            <a href="https://www.facebook.com/leojoy62/" target="blank">
+              <RiFacebookBoxFill className="hover:text-orange-600" />
+            </a>
+            <a href="https://github.com/Leojoy62" target="blank">
+              <FaSquareGithub className="hover:text-orange-600" />
+            </a>
+            <a href="https://www.linkedin.com/in/leojoy62/" target="blank">
+              <FaLinkedin className="hover:text-orange-600" />
+            </a>
+            <a href="https://twitter.com/LeoJoyz" target="blank">
+              <FaSquareXTwitter className="hover:text-orange-600" />
+            </a>
           </div>
           <div className="mt-3 mb-5">
             <h1 className="text-4xl font-bold text-white">
@@ -49,13 +57,16 @@ const Profile = () => {
           </div>
           <div className="my-5">
             <p className="text-gray-400 text-xl">
-              Knack of building applications with front and back end operations.
+              Knack on building applications with front and back-end operations.
             </p>
           </div>
           <div className="flex gap-6">
-            <button className="btn btn-outline hover:bg-orange-600 text-white px-10 rounded-3xl text-lg font-bold">
+            <a
+              href="#contact"
+              className="btn btn-outline hover:bg-orange-600 text-white px-10 rounded-3xl text-lg font-bold"
+            >
               Hire Me
-            </button>
+            </a>
             <a
               href="../../../public/Resume_of_Leonard_Joy_Mridha(MERN).pdf"
               download={"Resume_of_Leonard_Joy_Mridha(MERN)"}

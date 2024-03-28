@@ -25,7 +25,7 @@ const Education = () => {
           <div className="pointer"></div>
           <div>
             <h5 className="text-2xl text-orange-600 font-bold">
-              Kabi Nazrul Govet. College
+              Kabi Nazrul Govt. College
             </h5>
 
             <p className="text-xl font-semibold">

@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkHistory = () => {
   return (
-    <div>
+    <div data-aos="fade-up">
       <div className="flex justify-between items-center">
         <div className="flex justify-between items-center gap-5">
           <div className="pointer"></div>
