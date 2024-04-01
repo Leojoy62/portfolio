@@ -6,7 +6,7 @@ import "./ProFooter.css";
 const ProFooter = () => {
   return (
     <div className="footer-container ">
-      <div className="footer-parent">
+      <div className="footer-parent hidden md:block">
         <img src={bg} alt="" />
       </div>
     </div>

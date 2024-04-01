@@ -17,13 +17,13 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="shadow-gray-500 bg-gray-100 p-8 shadow-xl my-10">
-        <div className="flex justify-between items-center gap-5">
-          <div className="w-[40%]" data-aos="fade-right">
+        <div className="md:flex md:justify-between items-center gap-5">
+          <div className="md:w-[40%]" data-aos="fade-right">
             <img src={aboutp} alt="" />
           </div>
           <div
             style={{ textAlign: "justify" }}
-            className="w-[60%] text-xl"
+            className="md:w-[60%] text-xl mt-5 md:mt-0 lg:mt-0"
             data-aos="fade-left"
           >
             <p>
@@ -44,24 +44,24 @@ const AboutMe = () => {
             <br />
             <div className="flex flex-col gap-3">
               <div className="flex gap-2 items-center">
-                <div className="pointer"></div>
+                <div className="pointer hidden md:block"></div>
                 <p>
                   Proficient in the MERN stack, with a focus on building
                   end-to-end web applications.
                 </p>
               </div>
               <div className="flex gap-2 items-center">
-                <div className="pointer"></div>
+                <div className="pointer hidden md:block"></div>
                 <p>Strong problem-solving skills and attention to detail.</p>
               </div>
               <div className="flex gap-2 items-center">
-                <div className="pointer"></div>
+                <div className="pointer hidden md:block"></div>
                 <p>
                   Collaborative team player with cross-functional experience.
                 </p>
               </div>
               <div className="flex gap-2 items-center">
-                <div className="pointer"></div>
+                <div className="pointer hidden md:block"></div>
                 <p>
                   Committed to continuous learning and staying updated with
                   industry trends.
@@ -72,7 +72,7 @@ const AboutMe = () => {
             <div className="flex gap-6 flex justify-center items-center mt-10">
               <a
                 href="#contact"
-                className="btn bg-black hover:bg-orange-600 text-white px-10 rounded-3xl text-lg font-bold"
+                className="btn bg-black hover:bg-orange-600 text-white px-10 rounded-3xl md:text-lg font-bold"
               >
                 Hire Me
               </a>
@@ -80,7 +80,7 @@ const AboutMe = () => {
                 href="../../../public/Resume_of_Leonard_Joy_Mridha(MERN).pdf"
                 download={"Resume_of_Leonard_Joy_Mridha(MERN)"}
               >
-                <button className="btn bg-orange-600 hover:bg-black border-0 text-white px-10 rounded-3xl text-lg font-bold">
+                <button className="btn bg-orange-600 hover:bg-black border-0 text-white px-10 rounded-3xl md:text-lg font-bold">
                   Get Resume
                 </button>
               </a>

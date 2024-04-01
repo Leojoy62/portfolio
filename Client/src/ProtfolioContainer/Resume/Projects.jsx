@@ -101,9 +101,9 @@ const Projects = () => {
           }
         />
       )}
-      <div className="flex justify-between items-center">
+      <div className="md:flex justify-between items-center">
         <div className="flex justify-between items-center gap-5">
-          <div className="pointer"></div>
+          <div className="pointer hidden md:block"></div>
           <div>
             <h5 className="text-2xl text-orange-600 font-bold">YourChef</h5>
 
@@ -113,7 +113,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex justify-between items-center gap-2 mt-5 md:mt-0 lg:mt-0">
           <button
             onClick={() => {
               toggleModal(true);
@@ -140,10 +140,10 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div className="flex justify-between items-center my-5">
+      <div className="md:flex justify-between items-center my-5">
         <div className="flex justify-between items-center gap-5">
-          <div className="pointer"></div>
-          <div>
+          <div className="pointer hidden md:block"></div>
+          <div className="mr-8 md:mr-0 lg:mr-0">
             <h5 className="text-2xl text-orange-600 font-bold">CarFixer</h5>
 
             <p className="text-xl font-semibold">
@@ -151,7 +151,7 @@ const Projects = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex justify-between items-center gap-2 mt-5 md:mt-0 lg:mt-0">
           <button
             onClick={() => {
               toggleModal(true);
@@ -177,16 +177,16 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div className="flex justify-between items-center my-5">
+      <div className="md:flex justify-between items-center my-5">
         <div className="flex justify-between items-center gap-5">
-          <div className="pointer"></div>
-          <div>
+          <div className="pointer hidden md:block"></div>
+          <div className="mr-20 md:mr-0 lg:mr-0">
             <h5 className="text-2xl text-orange-600 font-bold">Miro</h5>
 
             <p className="text-xl font-semibold">A Front-end Task Project</p>
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex justify-between items-center gap-2 mt-5 md:mt-0 lg:mt-0">
           <button
             onClick={() => {
               toggleModal(true);

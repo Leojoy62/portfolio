@@ -74,9 +74,9 @@ const ContactMe = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <div className="bg-bgcolor w-[100%] h-[500px] rounded-xl p-5">
-          <div className="flex gap-4">
-            <div className="w-1/2" data-aos="fade-right">
+        <div className="bg-bgcolor w-[100%] h-[100%] md:h-[500px] rounded-xl p-5">
+          <div className="md:flex gap-4">
+            <div className="md:w-1/2" data-aos="fade-right">
               <div className="flex gap-2 ">
                 <h2 className="text-white text-4xl font-bold mb-5">
                   Get In Touch
@@ -110,7 +110,7 @@ const ContactMe = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 " data-aos="fade-left">
+            <div className="md:w-1/2 " data-aos="fade-left">
               <form onSubmit={sendEmail}>
                 <div className="w-[100%] h-[400px] bg-gray-300 rounded-xl mt-14 p-5 flex flex-col items-center justify-center">
                   <div className="w-full">

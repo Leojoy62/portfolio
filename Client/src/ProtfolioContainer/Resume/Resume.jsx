@@ -31,8 +31,8 @@ const Resume = () => {
           <span className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-600 px-8 py-[6px] rounded-xl"></span>
         </div>
       </div>
-      <div className="flex gap-5   justify-between items-center ">
-        <div className=" w-1/5 " data-aos="flip-left">
+      <div className="md:flex gap-5   md:justify-between  justify-center items-center ">
+        <div className=" md:w-1/5 " data-aos="flip-left">
           <div className="flex items-center">
             <div
               style={{ fontSize: "28px" }}
@@ -98,8 +98,8 @@ const Resume = () => {
             </ul>
           </div>
         </div>
-        <div className="resume-bar"></div>
-        <div className="w-3/5  flex flex-col justify-center  scrollable-div py-5 pr-2 ">
+        <div className="resume-bar hidden md:block"></div>
+        <div className="md:w-3/5  flex flex-col justify-center  scrollable-div py-5 pr-2 ">
           <div className="resume-content current-content">
             {toogleMenu === 1 && <Education />}
           </div>

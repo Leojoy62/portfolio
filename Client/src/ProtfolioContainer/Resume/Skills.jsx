@@ -4,7 +4,7 @@ import React from "react";
 const Skills = () => {
   return (
     <div data-aos="fade-up">
-      <div className="flex justify-between items-center">
+      <div className="md:flex md:justify-between flex flex-col md:flex-row justify-center items-center">
         <div>
           <div>
             <div className="flex items-center gap-2 mb-2">
@@ -75,7 +75,7 @@ const Skills = () => {
             />
           </div>
         </div>
-        <div>
+        <div className="mt-6 md:mt-0 lg:mt-0">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <div className="pointer"></div>
