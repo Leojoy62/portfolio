@@ -16,7 +16,7 @@ const Profile = () => {
       <div>
         <NavBar />
       </div>
-      <div className="md:flex md:justify-between  pt-10 pb-24 md:px-[5%]">
+      <div className="lg:flex lg:justify-between  pt-10 pb-24 lg:px-[5%] lg:flex-row flex flex-col justify-center  items-center">
         <div className="flex flex-col justify-center items-center">
           <div className="flex gap-8 text-4xl text-white justify-center items-center">
             <a href="https://www.facebook.com/leojoy62/" target="blank">
@@ -32,14 +32,14 @@ const Profile = () => {
               <FaSquareXTwitter className="hover:text-orange-600" />
             </a>
           </div>
-          <div className="mt-3 mb-5 ml-8 md:ml-0 lg:ml-0">
+          <div className="mt-3 mb-5 ml-8 lg:ml-0 lg:ml-0">
             <h1 className="text-4xl font-bold text-white">
               Hello, I'm{" "}
               <span className="text-orange-600">Leonard Joy Mridha</span>
             </h1>
           </div>
           <div>
-            <h1 className="text-5xl font-semibold text-white hidden md:block">
+            <h1 className="text-5xl font-semibold text-white hidden lg:block">
               <Typical
                 loop={Infinity}
                 steps={[
@@ -55,7 +55,7 @@ const Profile = () => {
               />
             </h1>
           </div>
-          <div className="my-5 ml-8 md:ml-0 lg:ml-0">
+          <div className="my-5 ml-8 lg:ml-0 lg:ml-0">
             <p className="text-gray-400 text-xl ">
               Knack on building applications with front and back-end operations.
             </p>
@@ -63,7 +63,7 @@ const Profile = () => {
           <div className="flex gap-6">
             <a
               href="#contact"
-              className="btn btn-outline hover:bg-orange-600 text-white px-10 rounded-3xl md:text-lg font-bold"
+              className="btn btn-outline hover:bg-orange-600 text-white px-10 rounded-3xl lg:text-lg font-bold"
             >
               Hire Me
             </a>
@@ -71,13 +71,13 @@ const Profile = () => {
               href="../../../public/Resume_of_Leonard_Joy_Mridha(MERN).pdf"
               download={"Resume_of_Leonard_Joy_Mridha(MERN)"}
             >
-              <button className="btn bg-orange-600 hover:bg-black border-0 text-white px-10 rounded-3xl md:text-lg font-bold">
+              <button className="btn bg-orange-600 hover:bg-black border-0 text-white px-10 rounded-3xl lg:text-lg font-bold">
                 Get Resume
               </button>
             </a>
           </div>
         </div>
-        <div className="profile-picture mt-5 md:mt-0 lg:mt-0">
+        <div className="profile-picture mt-5 lg:mt-0 ">
           <img src={pp} alt="" />
         </div>
       </div>

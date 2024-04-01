@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Typical from "react-typical";
+import { PUBLIC_KEY, TEMPLETE_KEY } from "../../../config";
 
 const ContactMe = () => {
   const [name, setName] = useState("");
@@ -25,8 +26,8 @@ const ContactMe = () => {
     };
 
     emailjs
-      .send("service_ghxvn5i", "template_o5qhwpp", templateInfo, {
-        publicKey: "VElxHt9LM0uL9-oj3",
+      .send("service_ghxvn5i", TEMPLETE_KEY, templateInfo, {
+        publicKey: PUBLIC_KEY,
       })
       .then(
         () => {
@@ -74,30 +75,35 @@ const ContactMe = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <div className="bg-bgcolor w-[100%] h-[100%] md:h-[500px] rounded-xl p-5">
-          <div className="md:flex gap-4">
-            <div className="md:w-1/2" data-aos="fade-right">
-              <div className="flex gap-2 ">
-                <h2 className="text-white text-4xl font-bold mb-5">
-                  Get In Touch
-                </h2>
-                <h1 className="text-3xl font-bold text-white">
-                  <Typical loop={Infinity} steps={["", 1000, "", 1000]} />
-                </h1>
-              </div>
-              <div className="flex gap-5 text-2xl text-white justify-start items-center">
-                <a href="https://www.facebook.com/leojoy62/" target="blank">
-                  <RiFacebookBoxFill className="hover:text-orange-600" />
-                </a>
-                <a href="https://github.com/Leojoy62" target="blank">
-                  <FaSquareGithub className="hover:text-orange-600" />
-                </a>
-                <a href="https://www.linkedin.com/in/leojoy62/" target="blank">
-                  <FaLinkedin className="hover:text-orange-600" />
-                </a>
-                <a href="https://twitter.com/LeoJoyz" target="blank">
-                  <FaSquareXTwitter className="hover:text-orange-600" />
-                </a>
+        <div className="bg-bgcolor w-[100%] h-[100%] lg:h-[500px] rounded-xl p-5">
+          <div className="lg:flex gap-4">
+            <div className="lg:w-1/2" data-aos="fade-right">
+              <div className="flex flex-col items-center lg:items-start">
+                <div className="flex  gap-2 ">
+                  <h2 className="text-white text-4xl font-bold mb-5">
+                    Get In Touch
+                  </h2>
+                  <h1 className="text-3xl font-bold text-white">
+                    <Typical loop={Infinity} steps={["", 1000, "", 1000]} />
+                  </h1>
+                </div>
+                <div className="flex gap-5 text-2xl text-white justify-start items-center">
+                  <a href="https://www.facebook.com/leojoy62/" target="blank">
+                    <RiFacebookBoxFill className="hover:text-orange-600" />
+                  </a>
+                  <a href="https://github.com/Leojoy62" target="blank">
+                    <FaSquareGithub className="hover:text-orange-600" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/leojoy62/"
+                    target="blank"
+                  >
+                    <FaLinkedin className="hover:text-orange-600" />
+                  </a>
+                  <a href="https://twitter.com/LeoJoyz" target="blank">
+                    <FaSquareXTwitter className="hover:text-orange-600" />
+                  </a>
+                </div>
               </div>
               <div className="mt-20 ">
                 <p className="text-gray-500 text-2xl mb-1">
@@ -110,7 +116,7 @@ const ContactMe = () => {
                 </div>
               </div>
             </div>
-            <div className="md:w-1/2 " data-aos="fade-left">
+            <div className="lg:w-1/2 " data-aos="fade-left">
               <form onSubmit={sendEmail}>
                 <div className="w-[100%] h-[400px] bg-gray-300 rounded-xl mt-14 p-5 flex flex-col items-center justify-center">
                   <div className="w-full">
